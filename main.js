@@ -8,7 +8,6 @@ const TypeWriter = function (txtElement, words, wait = 3000) { // words <- data-
   this.isDeleting = false;
 }
 
-
 /* -------------------------------------------------------------------------- */
 /*        Type Method -> add a method to TypeWriter by using prototype        */
 /* -------------------------------------------------------------------------- */
@@ -54,11 +53,9 @@ TypeWriter.prototype.type = function () {
   setTimeout(() => this.type(), typeSpeed);
 }
 
-
 /* -------------------------------------------------------------------------- */
 /*                        Event & Event function (init)                       */
 /* -------------------------------------------------------------------------- */
-
 
 // Init On DOM Load
 document.addEventListener('DOMContentLoaded', init);
